@@ -29,7 +29,7 @@ function getMovies(searchText) {
       $("#movies").html(output);
     })
     .catch((err) => {
-      return "error.html";
+      console.log(err);
     });
 }
 
@@ -103,6 +103,6 @@ function getMovie() {
       $("#movie").html(output);
     })
     .catch((err) => {
-      return "error.html";
+      console.log(err);
     });
 }
