@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Find a Movie</title>
+        <link rel="stylesheet" href="/public/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <img src="/public/assets/logo.png" alt="Find a Movie" class="main-logo">
+                <form id="searchForm">
+                    <input type="text" class="form-control" id="searchText" placeholder="Batman, Pulp Fiction, The Godfather...">
+                </form>
+            </div>
+        </div>
+
+        <div class="movie-container">
+            <div id="movies" class="row"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/public/scripts/main.js"></script>
+    </body>
+</html>

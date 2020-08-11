@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movie Details</title>
+        <link rel="stylesheet" href="/public/css/styles.css">
+    </head>
+    <body>
+
+        <div class="logo">
+            <a href="index.html"><img src="/public/assets/logo.png" class="logo"/></a>
+        </div>
+        <div class="container-movie">
+            <div id="movie" class="well"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/public/scripts/main.js"></script>
+        <script>
+            getMovie();
+        </script>
+    </body>
+</html>

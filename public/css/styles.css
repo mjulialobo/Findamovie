@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #242323;
+  color: white;
+}
+/*==ERROR==*/
+.error {
+  text-align: center;
+  margin-top: 20%;
+}
+.error p {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+.error a {
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.error a:hover {
+  background-color: yellowgreen;
+}
+/*==HOME SEARCH==*/
+.jumbotron {
+  margin: 25vh auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+input {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 5px;
+  width: 50%;
+  border: solid #23b5b5 4px;
+}
+
+/*==MOVIES LIST==*/
+.movie-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 36px;
+}
+.title-details img {
+  height: 400px;
+  width: 250px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.middle h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.middle .button {
+  font-size: 14px;
+  padding: 4px 16px;
+  width: 100px;
+  color: #242323;
+  background-color: #23b5b5;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.middle .button:hover {
+  background-color: #e16b22;
+}
+
+/*==MOVIE DETAILS - Title and rating==*/
+.logo {
+  padding: 10px;
+  width: 200px;
+}
+.movie-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 15vh auto;
+  width: 60%;
+}
+.movie-header {
+  margin-bottom: 40px;
+}
+.movie-header ul {
+  color: rgb(194, 186, 186);
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+}
+.movie-header li {
+  margin-right: 30px;
+  list-style-type: circle;
+}
+.movie-header li:first-child {
+  list-style: none;
+}
+.movie-header h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.movie-header .button {
+  display: flex;
+}
+.movie-header .button a {
+  padding: 4px 16px;
+  width: 100px;
+  color: #242323;
+  background-color: #23b5b5;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.movie-header .button a:hover {
+  background-color: #e16b22;
+}
+.rating {
+  padding: 4px 16px;
+  border: solid white 1px;
+  width: 90px;
+  border-radius: 5px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: left;
+  margin-right: 20px;
+}
+.rating p {
+  margin-left: 50px;
+}
+/*==MOVIE DETAILS - information==*/
+
+.information {
+  width: 500px;
+}
+.list-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.list-group-item h4 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+.list-group-item p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.poster img {
+  border-radius: 10px;
+}
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 760px) {
+  .jumbotron {
+    margin: 20vh auto;
+  }
+  .main-logo {
+    width: 90%;
+  }
+  input {
+    width: 80%;
+  }
+  #movies {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo {
+    padding: 10px;
+    width: 200px;
+  }
+  .movie-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2vh auto;
+    width: 90%;
+  }
+
+  .movie-header {
+    margin-bottom: 10px;
+  }
+  .movie-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .movie-header .button a {
+    font-size: 14px;
+    width: 90px;
+  }
+  .rating {
+    width: 85px;
+    margin-right: 15px;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .list-group-item h4 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .list-group-item p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .poster img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .movie-info {
+    margin: 5vh auto;
+    width: 90%;
+  }
+  .movie-header h2 {
+    font-size: 3rem;
+  }
+}
+
+/*big screens*/
+@media (min-width: 1600px) {
+  .main-logo {
+    width: 600px;
+  }
+  .title-details img {
+    height: 500px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .middle .button {
+    font-size: 16px;
+  }
+  .logo {
+    width: 300px;
+  }
+  .information {
+    width: 600px;
+  }
+  .poster img {
+    width: 350px;
+    height: 500px;
+  }
+  .movie-header {
+    margin-bottom: 80px;
+  }
+  .movie-header ul {
+    font-size: 16px;
+  }
+  .movie-header h2 {
+    font-size: 5rem;
+  }
+  .list-group-item h4 {
+    font-size: 32px;
+  }
+  .list-group-item p {
+    font-size: 20px;
+  }
+}
