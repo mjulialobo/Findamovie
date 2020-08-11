@@ -31,7 +31,7 @@
  $ git clone https://github.com/mjulialobo/Findamovie
 ```
 
-<h4> 2. Running the application <h4>
+<h4> 2. Running the application: <h4>
 <p> I suggest using <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"> Live Server </a> to run the application.<p>
 
 <h2><img src="https://static.thenounproject.com/png/25759-200.png"width="50px" height="50px" align="center"/> Results</h2>
